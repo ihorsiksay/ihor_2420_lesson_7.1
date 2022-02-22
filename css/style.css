@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import "null.css";
+body {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 160%;
+  color: #424551;
+}
+.wrapper {
+  max-width: 1920px;
+}
+.container {
+  max-width: 810px;
+  margin: 118px auto;
+}
+h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  color: #1e212c;
+  margin: 0px 0px 92px 0px;
+}
+[class*="__year"] {
+  box-sizing: border-box;
+  font-size: 16px;
+  color: #787a80;
+  padding: 0px 0px 0px 24px;
+  margin: 0px 24px 0px 0px;
+  background: url("../img/1.svg") 0 2px no-repeat;
+}
+.time {
+  margin: 0px 0px 40px 0px;
+}
+.minute__year {
+  display: inline-block;
+  background: url("../img/2.svg") 0 5px no-repeat;
+}
+img {
+  margin: 0px 0px 60px 0px;
+}
+[class*="subtitle"] {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e212c;
+}
+.subtitle {
+  margin: 0px 0px 24px 0px;
+}
+.normal__text {
+  margin: 0px 0px 26px 0px;
+}
+.normal1__text {
+  margin: 0px 0px 48px 0px;
+}
+.subtitle__quote {
+  background: url("../img/braces.png") 0 0 no-repeat;
+  padding: 0px 0px 0px 60px;
+  margin: 0px 0px 48px 0px;
+}
+.norma__text {
+  margin: 0px 0px 24px 0px;
+}
+.numbering {
+  margin: 0px 0px 48px 0px;
+}
+.roster {
+  margin: 0px 0px 24px 0px;
+}
+.list {
+  max-width: 390px;
+}
+.item__list {
+  padding: 0px 0px 0px 30px;
+  background: url("../img/Vector.svg") 0 4px no-repeat;
+}
+.footer__text {
+  margin: 0px 0px 212px 0px;
+}
+.subtitle__smol {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0px 0px 8px 0px;
+}
+.subtitle__one {
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 130%;
+  margin: 0px 0px 40px 0px;
+}
+.btn {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  line-height: 44px;
+  margin: 0px 0px 100px 0px;
+  color: rgb(255, 255, 255);
+  width: 161px;
+  height: 44px;
+  background: linear-gradient(55.95deg, #ff3f3a 0%, #f75e05 100%);
+  border-radius: 4px;
+}
+.subtitle__three {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: rgb(248, 169, 169);
+  /* колір фону background: ; універсальна властивість, заміняє background-color: #3751afa9;  background-image: ;*/
+  background-color: #3751afa9;
+  margin: 0px 0px 0px 0px;
+  max-width: 500px;
+  max-height: 200px;
+  min-height: 60px;
+  padding: 20px 0px 0px 20px;
+}
+.text__img {
+  background-image: url("../img/image.png");
+  margin: 20px 0px 40px 0px;
+}
+.textone__img {
+  font-size: 18px;
+  /* спочатку йде колір фону потім зображення */
+  background: rgb(208, 238, 238) url("../img/Vector.svg");
+  padding: 20px 40px 20px 40px;
+  margin: 0px 0px 40px 0px;
+}
+.text__gradient {
+  max-width: 600px;
+  color: rgb(255, 255, 255);
+  margin: 0px 0px 40px auto;
+  padding: 10px;
+  /*градіент*/
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+}
+/* no-repeat зображення не повторюється
+ repeat-y зображення по вертикалі 
+ repeat-x зображення по горизонталі, для патерну
+ space  намагається розмістити зображення без обрізання можуть зявлятись пробіли між зображеннями*/
+.text__norepeat {
+  font-size: 18px;
+  padding: 20px;
+  background: url("../img/Rectangle\ 267.svg") repeat-y;
+}
+.text__center {
+  font-size: 18px;
+  padding: 20px;
+  /* center - розміщення по центру
+  top - розміщення з верху
+  bottom - розміщення знизу
+  left - розміщення з ліва
+  right - розміщення з права 
+  right top -  з ліва верху
+  right bottom - з права знизу
+  background: url("../img/Rectangle\ 267.svg") right bottom no-repeat;
+
+  розміщення по центру
+  background: url("../img/Rectangle\ 267.svg") 50% no-repeat;
+  
+  розміщення 10% з ліва, 40% з верху
+  background: url("../img/Rectangle\ 267.svg") 10% 50% no-repeat;
+
+  розміщення 10px з ліва, 40px з верху
+  background: url("../img/Rectangle\ 267.svg") 10px 40px no-repeat;
+
+  background-size: 10% auto; зображення 10% ширини фону
+  background-size: auto 40%; зображення 40% висоти фону
+  auto якщо auto не писати, а тільки цифри то буде показувати ширину зображення
+  background-size:  40%;  40% ширини фону
+  */
+  background: url("../img/Rectangle\ 267.svg") 60px 40px no-repeat;
+  background-size: auto 40%;
+}
+.text__contain {
+  font-size: 18px;
+  padding: 20px;
+  /* 
+  contain - зображення займає найменшу частину фону
+  background: url("../img/Vector.svg") no-repeat;
+  background-size: contain; */
+  background: url("../img/Vector.svg") no-repeat;
+  background-size: contain;
+  margin: 0px 0px 40px 0px;
+}
+.text__cover {
+  font-size: 18px;
+  padding: 20px;
+  /*  ------- дуже добре для адаптива ---------
+  background-size: cover; зображення займає всю площину 
+  background-position: center; і розміщ
+  background: url("../img/image.png") background-size / background-position no-repeat;*/
+  /* background: колір зображення або градієнт розміщення / розмір повтор фіксація */
+  background: url("../img/image.png") center / cover no-repeat;
+  margin: 0px 0px 40px 0px;
+}
+.text__attachment {
+  /* background-attachment: fixed; 
+  fixed зображення фіксується при скролі*/
+  background: url("../img/image.png") center / cover no-repeat fixed;
+  margin: 0px 0px 40px 0px;
+}
+.list__one {
+  margin: 0px 0px 40px 0px;
+}
+.item__one {
+  background: url("../img/icon1.png") 0 5px / 20px no-repeat;
+  padding: 0px 0px 0px 30px;
+}
+.item__too {
+  /*  ----------  важливо  -----------
+  0 з ліва, 5px з права, 30px ширина зображення 
+  min-height: 30px; обмежує по висоті, щоб було не менше як розмір зображення, щоб незрізало знизу, якщо інтерліньяж менший за зображення*/
+  background: url("../img/icon1.png") 0 5px / 30px no-repeat;
+  min-height: 30px;
+  font-size: 18px;
+  margin: 0px 0px 5px 0px;
+  text-indent: 40px;
+}
